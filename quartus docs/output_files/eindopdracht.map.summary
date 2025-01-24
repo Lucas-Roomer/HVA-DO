@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Jan 15 16:19:00 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : eindopdracht
+Top-level Entity Name : NBitReg
+Family : Cyclone IV E
+Total logic elements : 8
+    Total combinational functions : 0
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 17
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
