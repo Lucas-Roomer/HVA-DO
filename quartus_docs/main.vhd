@@ -11,4 +11,5 @@ end entity opdracht_231;
 architecture behaviour of opdracht_231 is
 begin
 
+
 end architecture behaviour;

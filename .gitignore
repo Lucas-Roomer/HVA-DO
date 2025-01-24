@@ -1,3 +1,14 @@
-quartus_docs/
-!quartus_docs/*.vhd
-!quartus_docs/*.qpf
+#quartus_docs/
+!quartus_docs/**/*.vhd
+!quartus_docs/**/*.qpf
+
+
+
+quartus_docs/db
+quartus_docs/incremental_db
+quartus_docs/output_files
+*.txt
+*.bak
+*.qsf
+*.qws
+*.json
