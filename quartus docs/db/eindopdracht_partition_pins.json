@@ -4,6 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
+<<<<<<< Updated upstream
 					"name" : "Q[0]",
 					"strict" : false
 				},
@@ -37,6 +38,13 @@
 				},
 				{
 					"name" : "D[0]",
+=======
+					"name" : "input_sign",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+>>>>>>> Stashed changes
 					"strict" : false
 				},
 				{
@@ -44,6 +52,7 @@
 					"strict" : false
 				},
 				{
+<<<<<<< Updated upstream
 					"name" : "D[1]",
 					"strict" : false
 				},
@@ -69,6 +78,9 @@
 				},
 				{
 					"name" : "D[7]",
+=======
+					"name" : "button[4]",
+>>>>>>> Stashed changes
 					"strict" : false
 				}
 			]

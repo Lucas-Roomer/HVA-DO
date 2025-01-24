@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 |NBitReg
 D[0] => Q[0]~reg0.DATAIN
 D[1] => Q[1]~reg0.DATAIN
@@ -23,5 +24,149 @@ Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+|input_handler
+clk => button_debounce:debouncer.clk
+rst_n => button_debounce:debouncer.rst_n
+rst_n => switcher:sw0.rst_n
+rst_n => switcher:sw1.rst_n
+rst_n => switcher:sw2.rst_n
+rst_n => switcher:sw3.rst_n
+rst_n => switcher:sw_sign.rst_n
+button[0] => button_debounce:debouncer.button[0]
+button[1] => button_debounce:debouncer.button[1]
+button[2] => button_debounce:debouncer.button[2]
+button[3] => button_debounce:debouncer.button[3]
+button[4] => button_debounce:debouncer.button[4]
+man_clk => button_debounce:debouncer.button[5]
+ALU_res[0] => ~NO_FANOUT~
+ALU_res[1] => ~NO_FANOUT~
+ALU_res[2] => ~NO_FANOUT~
+ALU_res[3] => ~NO_FANOUT~
+ALU_flags[0] => ~NO_FANOUT~
+ALU_flags[1] => ~NO_FANOUT~
+ALU_flags[2] => ~NO_FANOUT~
+input_sign <= switcher:sw_sign.y
+input_A[0] <= input_A[0].DB_MAX_OUTPUT_PORT_TYPE
+input_A[1] <= input_A[1].DB_MAX_OUTPUT_PORT_TYPE
+input_A[2] <= input_A[2].DB_MAX_OUTPUT_PORT_TYPE
+input_A[3] <= input_A[3].DB_MAX_OUTPUT_PORT_TYPE
+input_B[0] <= input_B[0].DB_MAX_OUTPUT_PORT_TYPE
+input_B[1] <= input_B[1].DB_MAX_OUTPUT_PORT_TYPE
+input_B[2] <= input_B[2].DB_MAX_OUTPUT_PORT_TYPE
+input_B[3] <= input_B[3].DB_MAX_OUTPUT_PORT_TYPE
+input_OP[0] <= input_OP[0].DB_MAX_OUTPUT_PORT_TYPE
+input_OP[1] <= input_OP[1].DB_MAX_OUTPUT_PORT_TYPE
+input_OP[2] <= input_OP[2].DB_MAX_OUTPUT_PORT_TYPE
+input_OP[3] <= input_OP[3].DB_MAX_OUTPUT_PORT_TYPE
+output_res <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|input_handler|button_debounce:debouncer
+clk => samples_old[0].CLK
+clk => samples_old[1].CLK
+clk => samples_old[2].CLK
+clk => samples_old[3].CLK
+clk => samples_old[4].CLK
+clk => samples_old[5].CLK
+clk => samples_new[0].CLK
+clk => samples_new[1].CLK
+clk => samples_new[2].CLK
+clk => samples_new[3].CLK
+clk => samples_new[4].CLK
+clk => samples_new[5].CLK
+clk => clk_div_counter[0].CLK
+clk => clk_div_counter[1].CLK
+clk => clk_div_counter[2].CLK
+clk => clk_div_counter[3].CLK
+clk => clk_div_counter[4].CLK
+clk => clk_div_counter[5].CLK
+clk => clk_div_counter[6].CLK
+clk => clk_div_counter[7].CLK
+clk => clk_div_counter[8].CLK
+clk => clk_div_counter[9].CLK
+clk => clk_div_counter[10].CLK
+clk => clk_div_counter[11].CLK
+clk => clk_div_counter[12].CLK
+clk => clk_div_counter[13].CLK
+clk => clk_div_counter[14].CLK
+clk => clk_div_counter[15].CLK
+clk => clk_div_counter[16].CLK
+clk => clk_div_counter[17].CLK
+clk => clk_div_counter[18].CLK
+rst_n => clk_div_counter[0].ACLR
+rst_n => clk_div_counter[1].ACLR
+rst_n => clk_div_counter[2].ACLR
+rst_n => clk_div_counter[3].ACLR
+rst_n => clk_div_counter[4].ACLR
+rst_n => clk_div_counter[5].ACLR
+rst_n => clk_div_counter[6].ACLR
+rst_n => clk_div_counter[7].ACLR
+rst_n => clk_div_counter[8].ACLR
+rst_n => clk_div_counter[9].ACLR
+rst_n => clk_div_counter[10].ACLR
+rst_n => clk_div_counter[11].ACLR
+rst_n => clk_div_counter[12].ACLR
+rst_n => clk_div_counter[13].ACLR
+rst_n => clk_div_counter[14].ACLR
+rst_n => clk_div_counter[15].ACLR
+rst_n => clk_div_counter[16].ACLR
+rst_n => clk_div_counter[17].ACLR
+rst_n => clk_div_counter[18].ACLR
+rst_n => samples_old[0].ACLR
+rst_n => samples_old[1].ACLR
+rst_n => samples_old[2].ACLR
+rst_n => samples_old[3].ACLR
+rst_n => samples_old[4].ACLR
+rst_n => samples_old[5].ACLR
+rst_n => samples_new[0].ACLR
+rst_n => samples_new[1].ACLR
+rst_n => samples_new[2].ACLR
+rst_n => samples_new[3].ACLR
+rst_n => samples_new[4].ACLR
+rst_n => samples_new[5].ACLR
+button[0] => samples_new[0].DATAIN
+button[1] => samples_new[1].DATAIN
+button[2] => samples_new[2].DATAIN
+button[3] => samples_new[3].DATAIN
+button[4] => samples_new[4].DATAIN
+button[5] => samples_new[5].DATAIN
+prs_event[0] <= prs_event.DB_MAX_OUTPUT_PORT_TYPE
+prs_event[1] <= prs_event.DB_MAX_OUTPUT_PORT_TYPE
+prs_event[2] <= prs_event.DB_MAX_OUTPUT_PORT_TYPE
+prs_event[3] <= prs_event.DB_MAX_OUTPUT_PORT_TYPE
+prs_event[4] <= prs_event.DB_MAX_OUTPUT_PORT_TYPE
+prs_event[5] <= prs_event.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|input_handler|switcher:sw0
+x => state.LATCH_ENABLE
+rst_n => state.ACLR
+y <= state.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|input_handler|switcher:sw1
+x => state.LATCH_ENABLE
+rst_n => state.ACLR
+y <= state.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|input_handler|switcher:sw2
+x => state.LATCH_ENABLE
+rst_n => state.ACLR
+y <= state.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|input_handler|switcher:sw3
+x => state.LATCH_ENABLE
+rst_n => state.ACLR
+y <= state.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|input_handler|switcher:sw_sign
+x => state.LATCH_ENABLE
+rst_n => state.ACLR
+y <= state.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 
 
