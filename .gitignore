@@ -1,1 +1,3 @@
 quartus_docs/
+!quartus_docs/*.vhd
+!quartus_docs/*.qpf
