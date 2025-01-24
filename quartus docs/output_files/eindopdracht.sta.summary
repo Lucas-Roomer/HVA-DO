@@ -3,6 +3,7 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -11.000
@@ -15,6 +16,8 @@ Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -11.457
 =======
+=======
+>>>>>>> Stashed changes
 Type  : Slow 1200mV 85C Model Setup 'clk'
 Slack : -1.757
 TNS   : -21.659
@@ -50,6 +53,9 @@ TNS   : 0.000
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -25.231
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 ------------------------------------------------------------

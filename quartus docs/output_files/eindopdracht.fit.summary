@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Fitter Status : Successful - Wed Jan 15 16:19:07 2025
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : eindopdracht
@@ -12,6 +13,8 @@ Total logic elements : 8 / 22,320 ( < 1 % )
 Total registers : 8
 Total pins : 17 / 154 ( 11 % )
 =======
+=======
+>>>>>>> Stashed changes
 Fitter Status : Successful - Fri Jan 24 10:55:22 2025
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : eindopdracht
@@ -24,6 +27,9 @@ Total logic elements : 28 / 22,320 ( < 1 % )
     Dedicated logic registers : 21 / 22,320 ( < 1 % )
 Total registers : 21
 Total pins : 29 / 154 ( 19 % )
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )

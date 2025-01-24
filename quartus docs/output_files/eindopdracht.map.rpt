@@ -1,7 +1,12 @@
 Analysis & Synthesis report for eindopdracht
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Wed Jan 15 16:19:00 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+=======
+Fri Jan 24 10:55:09 2025
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+>>>>>>> Stashed changes
 =======
 Fri Jan 24 10:55:09 2025
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
@@ -19,12 +24,15 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   8. General Register Statistics
   9. Parameter Settings for User Entity Instance: Top-level Entity: |NBitReg
  10. Post-Synthesis Netlist Statistics for Top Partition
  11. Elapsed Time Per Partition
  12. Analysis & Synthesis Messages
 =======
+=======
+>>>>>>> Stashed changes
   8. User-Specified and Inferred Latches
   9. General Register Statistics
  10. Parameter Settings for User Entity Instance: button_debounce:debouncer
@@ -36,6 +44,9 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
  16. Post-Synthesis Netlist Statistics for Top Partition
  17. Elapsed Time Per Partition
  18. Analysis & Synthesis Messages
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 
@@ -44,7 +55,11 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 ; Legal Notice ;
 ----------------
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Copyright (C) 2024  Intel Corporation. All rights reserved.
+=======
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+>>>>>>> Stashed changes
 =======
 Copyright (C) 2019  Intel Corporation. All rights reserved.
 >>>>>>> Stashed changes
@@ -65,6 +80,7 @@ https://fpgasoftware.intel.com/eula.
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
@@ -84,6 +100,8 @@ https://fpgasoftware.intel.com/eula.
 ; Total PLLs                         ; 0                                              ;
 +------------------------------------+------------------------------------------------+
 =======
+=======
+>>>>>>> Stashed changes
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
@@ -102,6 +120,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 
@@ -112,7 +133,11 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE22F17C6       ;                    ;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; Top-level entity name                                            ; NBitReg            ; eindopdracht       ;
+=======
+; Top-level entity name                                            ; input_handler      ; eindopdracht       ;
+>>>>>>> Stashed changes
 =======
 ; Top-level entity name                                            ; input_handler      ; eindopdracht       ;
 >>>>>>> Stashed changes
@@ -201,6 +226,7 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
@@ -264,6 +290,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 =======
+=======
+>>>>>>> Stashed changes
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
@@ -340,12 +368,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 ; Total registers                              ; 8     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
@@ -354,17 +386,23 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 =======
+=======
+>>>>>>> Stashed changes
 ; Total registers                              ; 21    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 21    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 2     ;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 +-------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Top-level Entity: |NBitReg ;
@@ -389,6 +427,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Average LUT depth ; 0.00                            ;
 +-------------------+---------------------------------+
 =======
+=======
+>>>>>>> Stashed changes
 +------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: button_debounce:debouncer ;
 +----------------+-------+-----------------------------------------------+
@@ -466,6 +506,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Max LUT depth         ; 4.00                        ;
 ; Average LUT depth     ; 2.66                        ;
 +-----------------------+-----------------------------+
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 
@@ -475,7 +518,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; Top            ; 00:00:00     ;
+=======
+; Top            ; 00:00:01     ;
+>>>>>>> Stashed changes
 =======
 ; Top            ; 00:00:01     ;
 >>>>>>> Stashed changes
@@ -487,6 +534,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
     Info: Processing started: Wed Jan 15 16:18:49 2025
@@ -513,6 +561,8 @@ Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:11
 =======
+=======
+>>>>>>> Stashed changes
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
     Info: Processing started: Fri Jan 24 10:54:54 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off eindopdracht -c eindopdracht
@@ -586,6 +636,9 @@ Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
     Info: Processing ended: Fri Jan 24 10:55:09 2025
     Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:21
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 

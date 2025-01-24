@@ -1,0 +1,130 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lucas/OneDrive/Documenten/GitHub/HVA-DO/quartus docs/simulation/modelsim
+Edisplay_driver
+Z1 w1737498147
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/lucas/OneDrive/Documenten/GitHub/HVA-DO/quartus docs/display_driver.vhd
+Z6 FC:/Users/lucas/OneDrive/Documenten/GitHub/HVA-DO/quartus docs/display_driver.vhd
+l0
+L28
+V1<7jOFhck03;V:AgcYcUa3
+!s100 UdG;o;n3Z4M_`3ZhL75f_0
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1737498340
+!i10b 1
+Z9 !s108 1737498340.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/lucas/OneDrive/Documenten/GitHub/HVA-DO/quartus docs/display_driver.vhd|
+Z11 !s107 C:/Users/lucas/OneDrive/Documenten/GitHub/HVA-DO/quartus docs/display_driver.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehaviour
+R2
+R3
+R4
+Z14 DEx4 work 14 display_driver 0 22 1<7jOFhck03;V:AgcYcUa3
+l137
+L109
+Vkl<Ln?PV[Ibo5E]kaiIIN3
+!s100 6`cT>=P7o7KJ>]L`T;U8F0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edisplay_driver_testbench
+Z15 w1737496517
+R2
+R3
+R4
+R0
+Z16 8display_driver_testbench.vhd
+Z17 Fdisplay_driver_testbench.vhd
+l0
+L5
+VcOaNXE=EG=I>9cPcQzCoc1
+!s100 >UQIKijmJzDad8ZB5<cYi0
+R7
+32
+Z18 !s110 1737498350
+!i10b 1
+Z19 !s108 1737498350.000000
+Z20 !s90 -reportprogress|300|display_driver_testbench.vhd|
+Z21 !s107 display_driver_testbench.vhd|
+!i113 1
+R13
+Atestbench
+R14
+R2
+R3
+R4
+DEx4 work 24 display_driver_testbench 0 22 cOaNXE=EG=I>9cPcQzCoc1
+l37
+L8
+VaC`]Q`Gd8>enG4Z43kIGk1
+!s100 ?d4F_4E=o>eRooF[on:k63
+R7
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R13
+Eencoder
+R1
+R3
+R4
+R0
+R5
+R6
+l0
+L4
+V9F3jYL]2LFDfkS`>1fYHB1
+!s100 `Xc9nIlA4Eoa3=n1fenRO1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Abehaviour
+R3
+R4
+DEx4 work 7 encoder 0 22 9F3jYL]2LFDfkS`>1fYHB1
+l51
+L48
+VD4U[hNZ2X[_fcW=aV3O3T1
+!s100 S8_C]UF03FVBi6=6D>1^10
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13

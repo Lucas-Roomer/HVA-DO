@@ -1,7 +1,12 @@
 Assembler report for eindopdracht
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Wed Jan 15 16:19:09 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+=======
+Fri Jan 24 10:55:26 2025
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+>>>>>>> Stashed changes
 =======
 Fri Jan 24 10:55:26 2025
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
@@ -16,7 +21,11 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   3. Assembler Settings
   4. Assembler Generated Files
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   5. Assembler Device Options: C:/Users/Rende/Documents/GitHub/HVA-DO/quartus docs/output_files/eindopdracht.sof
+=======
+  5. Assembler Device Options: C:/Users/lucas/OneDrive/Documenten/GitHub/HVA-DO/quartus docs/output_files/eindopdracht.sof
+>>>>>>> Stashed changes
 =======
   5. Assembler Device Options: C:/Users/lucas/OneDrive/Documenten/GitHub/HVA-DO/quartus docs/output_files/eindopdracht.sof
 >>>>>>> Stashed changes
@@ -28,7 +37,11 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 ; Legal Notice ;
 ----------------
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Copyright (C) 2024  Intel Corporation. All rights reserved.
+=======
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+>>>>>>> Stashed changes
 =======
 Copyright (C) 2019  Intel Corporation. All rights reserved.
 >>>>>>> Stashed changes
@@ -52,9 +65,15 @@ https://fpgasoftware.intel.com/eula.
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ; Assembler Status      ; Successful - Wed Jan 15 16:19:09 2025 ;
 ; Revision Name         ; eindopdracht                          ;
 ; Top-level Entity Name ; NBitReg                               ;
+=======
+; Assembler Status      ; Successful - Fri Jan 24 10:55:26 2025 ;
+; Revision Name         ; eindopdracht                          ;
+; Top-level Entity Name ; input_handler                         ;
+>>>>>>> Stashed changes
 =======
 ; Assembler Status      ; Successful - Fri Jan 24 10:55:26 2025 ;
 ; Revision Name         ; eindopdracht                          ;
@@ -72,6 +91,7 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 +-----------------------------------------------------------------------------------+
 ; Assembler Generated Files                                                         ;
@@ -91,6 +111,8 @@ https://fpgasoftware.intel.com/eula.
 ; Checksum       ; 0x00135BE3                                                                                 ;
 +----------------+--------------------------------------------------------------------------------------------+
 =======
+=======
+>>>>>>> Stashed changes
 +---------------------------------------------------------------------------------------------+
 ; Assembler Generated Files                                                                   ;
 +---------------------------------------------------------------------------------------------+
@@ -108,6 +130,9 @@ https://fpgasoftware.intel.com/eula.
 ; JTAG usercode  ; 0x00137D7B                                                                                           ;
 ; Checksum       ; 0x00137D7B                                                                                           ;
 +----------------+------------------------------------------------------------------------------------------------------+
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 
@@ -117,8 +142,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
     Info: Processing started: Wed Jan 15 16:19:08 2025
+=======
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Fri Jan 24 10:55:24 2025
+>>>>>>> Stashed changes
 =======
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
     Info: Processing started: Fri Jan 24 10:55:24 2025
@@ -129,9 +159,15 @@ Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     Info: Peak virtual memory: 4704 megabytes
     Info: Processing ended: Wed Jan 15 16:19:09 2025
     Info: Elapsed time: 00:00:01
+=======
+    Info: Peak virtual memory: 4686 megabytes
+    Info: Processing ended: Fri Jan 24 10:55:26 2025
+    Info: Elapsed time: 00:00:02
+>>>>>>> Stashed changes
 =======
     Info: Peak virtual memory: 4686 megabytes
     Info: Processing ended: Fri Jan 24 10:55:26 2025

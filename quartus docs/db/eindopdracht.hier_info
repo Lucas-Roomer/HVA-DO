@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 |NBitReg
 D[0] => Q[0]~reg0.DATAIN
 D[1] => Q[1]~reg0.DATAIN
@@ -25,6 +26,8 @@ Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 =======
+=======
+>>>>>>> Stashed changes
 |input_handler
 clk => button_debounce:debouncer.clk
 rst_n => button_debounce:debouncer.rst_n
@@ -167,6 +170,9 @@ y <= state.DB_MAX_OUTPUT_PORT_TYPE
 x => state.LATCH_ENABLE
 rst_n => state.ACLR
 y <= state.DB_MAX_OUTPUT_PORT_TYPE
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 

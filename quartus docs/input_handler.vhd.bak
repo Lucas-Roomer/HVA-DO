@@ -1,0 +1,52 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity opdracht_431 is
+	port(
+		clk : in std_logic;
+		rst_n : in std_logic;
+		button : in std_logic;
+		pressed : out std_logic;
+		prs_event : out std_logic;
+		rel_event : out std_logic);
+end entity opdracht_431;
+
+architecture behaviour of opdracht_431 is
+	signal clk_div_counter : unsigned(18 downto 0); --division by 2^19 =~500 000 which will be a pulse every ~10 ms when running at 50 MHz
+	signal clk_div : std_logic;
+	--signal samples : std_logic_vector(2 downto 0); --3 sample variant
+	signal samples : std_logic_vector(1 downto 0); -- 2 sample variant
+begin
+	clk_div_proc : process(rst_n, clk) is
+	begin
+		if rst_n='0' then
+			clk_div_counter <= (others =>'0');
+		elsif (rising_edge(clk)) then
+			clk_div_counter <= unsigned(clk_div_counter + 1);
+			if clk_div_counter = 0 then
+				clk_div <='1';
+			else
+				clk_div <='0';
+			end if;
+		end if;
+	end process clk_div_proc; 
+	
+	sampler : process(clk, rst_n) is
+	begin
+		if rst_n='0' then
+			samples <= (others =>'0');
+		elsif rising_edge(clk) then
+			if clk_div='1' then
+				samples(0) <= button;
+				samples(1) <= samples(0);
+			end if;
+		end if;
+	end process sampler;
+
+
+	pressed <= not samples(0);
+	prs_event <= (not samples(0)) and samples(1) and clk_div;
+	rel_event <= (not samples(1)) and samples(0) and clk_div;
+	
+end architecture behaviour;
