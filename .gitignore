@@ -1,3 +1,3 @@
-/quartus\ docs/*
-!/quartus\ docs/**/*.vhd
-!/quartus\ docs/**/*.qpf
+quartus\ docs/
+!quartus\ docs/**/*.vhd
+!quartus\ docs/**/*.qpf
