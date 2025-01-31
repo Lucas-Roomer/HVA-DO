@@ -1,11 +1,11 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity eindopdracht is
+entity main is
 	port(
 		--system inputs
 		clk : in std_logic;
-		rst_n : in std_logic
+		rst_n : in std_logic;
 		
 		--user_inputs
 		SW : in std_logic_vector(4 downto 0);
@@ -20,9 +20,9 @@ entity eindopdracht is
 		SDI : out std_logic;
 		LE : out std_logic;
 		OEn : out std_logic);
-end entity opdracht_231;
+end entity main;
 
-architecture behaviour of eindopdracht is
+architecture behaviour of main is
 	signal ALU_res : std_logic_vector(3 downto 0);
 	signal ALU_flags : std_logic_vector(1 downto 0);
 	signal current_inputs : std_logic_vector(3 downto 0);
@@ -52,6 +52,16 @@ architecture behaviour of eindopdracht is
 			output_flags : out std_logic_vector(3 downto 0));
 	end component input_handler;
 	
+	
+	component ALU is
+		port( 
+			A,B,OPC	: 	in std_logic_vector(3 downto 0);
+			Z   		:	out std_logic_vector(3 downto 0);
+			Ci 		:	in std_logic;
+			Co, ovfl	: 	out std_logic
+		);
+	end component ALU;
+	
 
 	component display_driver 
 		port(
@@ -65,12 +75,33 @@ architecture behaviour of eindopdracht is
 			SDI : out std_logic;
 			LE : out std_logic;
 			OEn : out std_logic);
-	end component encoder;
+	end component display_driver;
 begin
 
 	main_input_handler : input_handler port map(
 		clk => clk,
-		rst
+		rst_n => rst_n,
+		button => SW,
+		man_clk => KEY(0),
+		ALU_res => ALU_res,
+		ALU_flags => ALU_flags,
+		current_inputs => current_inputs,
+		input_sign => input_sign,
+		input_A => input_A,
+		input_B => input_B,
+		input_OP => input_OP,
+		output_res => output_res,
+		output_flags => output_flags);
+		
+		
+	main_ALU : ALU port map(
+		A => input_A,
+		B => input_B,
+		OPC => input_OP,
+		Z => ALU_res,
+		ci => output_flags(3),
+		co => ALU_flags(1),
+		ovfl => ALU_flags(0));
 	
 	
 	main_display_driver : display_driver port map(
@@ -86,6 +117,6 @@ begin
 		OEn => OEn);
 		
 		
-	SW_led <= input_sign & current_inputs
-	LED <= output_flags & input_OP
+	SW_led <= input_sign & current_inputs;
+	LED <= output_flags & input_OP;
 end architecture behaviour;
