@@ -135,17 +135,17 @@ architecture behaviour of ALU is
 			
 			begin
 				MSBAND 	<=  A(3) AND B(3);
-				MSBNAND 	<=  A(3) NAND B(3);
+				MSBNAND 	<= not (A(3) AND B(3));
 				
 				if sign = '0' then
 					Z <= Zout;
 					Co <= Carry;
 					ovfl <= '0';
 				else
-					if (MSBAND = '1' and Zout(4) = '0') then
+					if ((MSBAND = '1') and (Zout(3) = '0')) then
 						ovfl <= '1';
 						
-					elsif (MSBNAND = '1' and Zout(4) = '1') then
+					elsif (MSBNAND = '1' and Zout(3) = '1') then
 						ovfl <= '1';
 						
 					else
