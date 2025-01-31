@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity NBitReg is
-	generic (N : integer := 8);
+	generic (N : integer := 4);
 	port(	D: in std_logic_vector(N-1 downto 0);
 			clk: in std_logic;
 			enable : in std_logic;
