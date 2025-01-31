@@ -6,7 +6,7 @@ entity ALU is
 	port( 
 		A,B,OPC	: 	in std_logic_vector(3 downto 0);
 		Z   		:	out std_logic_vector(3 downto 0);
-		Ci 		:	in std_logic;
+		Ci, sign	:	in std_logic;
 		Co, ovfl	: 	out std_logic
 	);
 end entity ALU;
@@ -15,7 +15,8 @@ architecture behaviour of ALU is
 	signal AExtrBit, BExtrBit, ARes 	: 	std_logic_vector(4 downto 0);
 	signal Zout								: 	std_logic_vector(3 downto 0);	
 	signal ACal 							: 	unsigned (4 downto 0);
-	signal Carry 							: 	std_logic;
+	signal Carry, MSBAND, MSBNAND		: 	std_logic;
+
 	begin	
 	ALUProc : process (A, B, Ci, OPC, AExtrBit, BExtrBit, ARes, Zout, ACal ,Carry ) is
 		
@@ -129,6 +130,30 @@ architecture behaviour of ALU is
 					
 			end case;
 		end process ALUProc;
-		Z <= Zout;
-		Co <= Carry;
+		
+		Overflow : process (A, B, Ci, OPC, AExtrBit, BExtrBit, ARes, Zout, ACal ,Carry, sign, MSBNAND, MSBAND) is
+			
+			begin
+				MSBAND 	<=  A(3) AND B(3);
+				MSBNAND 	<=  A(3) NAND B(3);
+				
+				if sign = '0' then
+					Z <= Zout;
+					Co <= Carry;
+					ovfl <= '0';
+				else
+					if (MSBAND = '1' and Zout(4) = '0') then
+						ovfl <= '1';
+						
+					else if (MSBNAND = '1' and Zout(4) = '1') then
+						ovfl <= '1';
+						
+					else
+						ovfl <= '0';
+					end if;
+					
+					Z <= Zout;
+						Co <= Carry;
+				end if;
+		end process Overflow;
 end architecture;
