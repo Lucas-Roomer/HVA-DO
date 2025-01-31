@@ -5,7 +5,6 @@ entity main is
 	port(
 		--system inputs
 		clk : in std_logic;
-		rst_n : in std_logic;
 		
 		--user_inputs
 		SW : in std_logic_vector(4 downto 0);
@@ -23,6 +22,8 @@ entity main is
 end entity main;
 
 architecture behaviour of main is
+	signal rst_n : std_logic;
+
 	signal ALU_res : std_logic_vector(3 downto 0);
 	signal ALU_flags : std_logic_vector(1 downto 0);
 	signal current_inputs : std_logic_vector(3 downto 0);
@@ -77,6 +78,10 @@ architecture behaviour of main is
 			OEn : out std_logic);
 	end component display_driver;
 begin
+	
+	rst_n <= key(1);
+	
+	
 
 	main_input_handler : input_handler port map(
 		clk => clk,
