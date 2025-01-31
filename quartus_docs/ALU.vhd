@@ -145,7 +145,7 @@ architecture behaviour of ALU is
 					if (MSBAND = '1' and Zout(4) = '0') then
 						ovfl <= '1';
 						
-					else if (MSBNAND = '1' and Zout(4) = '1') then
+					elsif (MSBNAND = '1' and Zout(4) = '1') then
 						ovfl <= '1';
 						
 					else
