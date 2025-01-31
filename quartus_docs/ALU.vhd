@@ -60,7 +60,7 @@ architecture behaviour of ALU is
 					
 				when "0100" =>
 				-- sub
-					ACal <= unsigned(AExtrBit) - (unsigned(not BExtrBit) + "1");
+					ACal <= unsigned(AExtrBit) + (unsigned(not BExtrBit) + "1");
 					Zout <= std_logic_vector(ACal(3 downto 0));
                Carry <= ACal(4);
 					
@@ -68,9 +68,9 @@ architecture behaviour of ALU is
 				--sub + carry
 				
 					if Ci = '1' then
-						ACal <= unsigned(AExtrBit) - (unsigned(not BExtrBit) + "1") + "1";
+						ACal <= unsigned(AExtrBit) + (unsigned(not BExtrBit) + "1") + "1";
 					else
-						ACal <= unsigned(AExtrBit) - (unsigned(not BExtrBit) + "1");
+						ACal <= unsigned(AExtrBit) + (unsigned(not BExtrBit) + "1");
 					end if;
 					
 					Zout <= std_logic_vector(ACal(3 downto 0));
