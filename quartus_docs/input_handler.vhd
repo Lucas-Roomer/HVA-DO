@@ -155,6 +155,7 @@ entity input_handler is
 		man_clk : in std_logic;
 		ALU_res : in std_logic_vector(3 downto 0);
 		ALU_flags : in std_logic_vector(1 downto 0);
+		current_inputs : out std_logic_vector(3 downto 0);
 		input_sign : out std_logic;
 		input_A : out std_logic_vector(3 downto 0);
 		input_B : out std_logic_vector(3 downto 0);
@@ -297,7 +298,7 @@ begin
 	
 	
 	
-	
+	current_inputs <= current_input;
 	flags <= ALU_flags & sign & (not (ALU_res(3) or ALU_res(2) or ALU_res(1) or ALU_res(0)));
 	input_sign <= sign;
 end architecture behaviour;
