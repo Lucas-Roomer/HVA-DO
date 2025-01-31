@@ -58,7 +58,7 @@ architecture behaviour of main is
 		port( 
 			A,B,OPC	: 	in std_logic_vector(3 downto 0);
 			Z   		:	out std_logic_vector(3 downto 0);
-			Ci 		:	in std_logic;
+			Ci, sign	:	in std_logic;
 			Co, ovfl	: 	out std_logic
 		);
 	end component ALU;
@@ -105,6 +105,7 @@ begin
 		OPC => input_OP,
 		Z => ALU_res,
 		ci => output_flags(3),
+		sign => input_sign,
 		co => ALU_flags(1),
 		ovfl => ALU_flags(0));
 	
